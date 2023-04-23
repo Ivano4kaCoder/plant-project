@@ -1,0 +1,23 @@
+@import "./variables";
+@import "./header";
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Nunito", sans-serif;
+}
+
+.container {
+  max-width: 1410px;
+  width: 100%;
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.row {
+  @include flex(space-between, center);
+  margin: 0 -15px;
+}

@@ -1,0 +1,16 @@
+$theme-color-green: #00730c;
+$theme-color-dark-green: #0c4b35;
+$theme-color-black: #0b0b0b;
+$color-white: white;
+$typography-color-black: #212529;
+$typography-color-grey: #676767;
+
+$padding-s: 20px;
+$padding-m: $padding-s * 2;
+$padding-l: $padding-s * 3;
+
+@mixin flex($justify, $align) {
+  display: flex;
+  justify-content: $justify;
+  align-items: $align;
+}

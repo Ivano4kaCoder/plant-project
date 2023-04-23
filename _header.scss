@@ -1,0 +1,84 @@
+.top-nav-bar {
+  @include flex(space-between, center);
+  height: 59px;
+  background-color: $theme-color-dark-green;
+
+  a {
+    display: block;
+    text-decoration: none;
+    color: $color-white;
+    height: 25px;
+    line-height: 25px;
+    font-size: 14px;
+    margin-left: 10px;
+  }
+
+  ul {
+    @include flex(space-between, center);
+  }
+}
+
+.contast-item {
+  li {
+    margin-right: 30px;
+    @include flex(space-between, center);
+  }
+}
+
+.languages {
+  a:after {
+    content: "";
+    background-image: url(images/white-down-arrow.svg);
+    background-repeat: no-repeat;
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    top: 26px;
+  }
+}
+
+.nav-bar {
+  @include flex(space-between, center);
+  height: 85px;
+  background-color: $color-white;
+
+  a {
+    display: block;
+    text-decoration: none;
+    color: $typography-color-black;
+    height: 20px;
+    line-height: 20px;
+    font-size: 16px;
+  }
+
+  a:hover {
+    color: $theme-color-green;
+  }
+
+  li {
+    margin-right: 44px;
+  }
+
+  ul {
+    @include flex(space-between, center);
+  }
+
+  button {
+    padding: 10px 10px 10px 35px;
+    width: 170px;
+    height: 50px;
+    border-radius: 5px;
+    color: $color-white;
+    background-color: $theme-color-green;
+    border: 1px solid $theme-color-green;
+    cursor: pointer;
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  .btn-call-us {
+    background-image: url(images/btn-call-us.svg);
+    background-repeat: no-repeat;
+    background-position: 20%;
+  }
+}
